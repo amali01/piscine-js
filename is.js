@@ -9,4 +9,3 @@ is.obj = (o) => (typeof o === 'object' && o !== null && !Array.isArray(o));
 is.fun = (f) => (typeof f === 'function');
 is.truthy = (t) => t;
 is.falsy = (f) => !f;
-
