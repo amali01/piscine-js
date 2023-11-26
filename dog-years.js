@@ -16,8 +16,11 @@ const planet = {
     uranus: 84.016846,
     neptune: 164.79132,
 }
-    // Return the calculated age on the given planet in dog years
-    const result = Number((planet[name] * DogYears).toFixed(2))
+  // Calculate the dog's age on the given planet in dog years
+  const dogAgeOnPlanet = DogYears * planet[name];
 
-return result ;
+  // Return the calculated age
+  const result = Number(dogAgeOnPlanet.toFixed(2));
+
+  return result;
 }
