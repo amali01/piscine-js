@@ -1,5 +1,4 @@
 const is = {};
-
 is.num = (n) => (typeof n === 'number');
 is.nan = (n) => Number.isNaN(n);
 is.str = (s) => (typeof s === 'string');
