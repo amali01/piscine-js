@@ -7,6 +7,6 @@ is.def = (d) => !is.undef(d);
 is.arr = (a) => (Array.isArray(a));
 is.obj = (o) => (typeof o === 'object' && o !== null && !Array.isArray(o));
 is.fun = (f) => (typeof f === 'function');
-is.truthy = (t) => (t == true ? true : false);
-is.falsy = (f) => (f == false ? false : true);
+is.truthy = (t) => t;
+is.falsy = (f) => !f;
 
