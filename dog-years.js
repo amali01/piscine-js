@@ -1,6 +1,6 @@
 // Function to calculate a dog's age in dog years on a given planet
 function dogYears(name , DogAge){
-    
+
  // Calculate the dog's age in Earth years
  // 31,557,600 seconds in an Earth year
 const DogYears = (DogAge / 31557600 ) * 7
@@ -17,5 +17,7 @@ const planet = {
     neptune: 164.79132,
 }
     // Return the calculated age on the given planet in dog years
-return planet[name] * DogYears;
+    const result = Number((planet[name] * DogYears).toFixed(2))
+
+return result ;
 }
