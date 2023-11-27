@@ -5,7 +5,7 @@ function arrToSet(arr) {
 
 // from Array to string
 function arrToStr(arr) {
-    return arr.toString();
+    return arr.toString().replaceAll(",", "");
 }
 
 // from Set to Array
