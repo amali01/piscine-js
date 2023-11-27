@@ -1,21 +1,21 @@
 // from Array to Set
-function arrToSet(arr){
+function arrToSet(arr) {
     return new Set(arr);
 }
 
 // from Array to string
-function arrToStr(arr){
-    return arr.Join(", ");
+function arrToStr(arr) {
+    return arr.join(', ');
 }
 
 // from Set to Array
-function setToArr(set){
-    return Array(set);
+function setToArr(set) {
+    return Array.from(set);
 }
 
 // from Set to string
-function setToStr(set){
-    return set.Join(", ");
+function setToStr(set) {
+    return Array.from(set).join(', ');
 }
 
 // from string to Array
