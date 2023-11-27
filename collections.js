@@ -63,7 +63,9 @@ function strToObj(str) {
 
 // to determine the "super type" of a value
 function superTypeOf(value) {
-    if (Array.isArray(value)) {
+    if (value === null){
+        return 'null';
+    }else if (Array.isArray(value)) {
         return 'Array';
     } else if (value instanceof Set) {
         return 'Set';
