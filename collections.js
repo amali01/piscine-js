@@ -70,6 +70,11 @@ function superTypeOf(value) {
     } else if (value instanceof Map) {
         return 'Map';
     } else {
-        return typeof value;
+        return capitalizeFirstLetter(typeof value);
     }
+}
+
+// capitalize the first letter of a string
+function capitalizeFirstLetter(str) {
+    return str.charAt(0).toUpperCase() + str.slice(1);
 }
