@@ -15,7 +15,7 @@ function setToArr(set) {
 
 // from Set to string
 function setToStr(set) {
-    return Array.from(set).join(', ');
+    return Array.from(set).join('');
 }
 
 // from string to Array
