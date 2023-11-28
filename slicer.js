@@ -14,10 +14,11 @@ function slice(input, index1, index2 = input.length) {
         res += input[i];
       }
     } else if (Array.isArray(input)) {
+        res = [];
       for (let i = index1; i < index2; i++) {
-        res += input[i];
+        res.push(input[i]);
       }
-      return strToArr(res);
+
     }
   
     return res;
