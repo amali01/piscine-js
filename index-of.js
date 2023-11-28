@@ -1,6 +1,6 @@
 function indexOf(arr,value,index=0){
     if (arr.length===0 || value.length === 0){
-        return -1
+        return -1;
     }
 
     for (let i = index ; i < arr.length; i++) {
@@ -13,18 +13,17 @@ function indexOf(arr,value,index=0){
 }
 
 function lastIndexOf(arr,value,index=0){
-    let res = -1;
     if (arr.length===0 || value.length === 0){
-        return res
+        return  -1;
     }
 
-    for (let i = index ; i < arr.length; i++) {
+    for (let i = index ; i >= 0; i--) {
         if (arr[i] === value) {
-          res = i;
+            return i;
         }
     }
     
-    return res;
+    return  -1;
 }
 
 function includes(arr,value,index=0){
