@@ -37,8 +37,11 @@ function divide (a, b){
              a  = Math. abs(a) - Math. abs(b);
               result++;
           }
+          
         // If 'b' is negative, make the result negative
-          if (b < 0 || A < 0)  {
+        if (b < 0 && A < 0)  {
+            return result
+        } else if (b < 0 || A < 0)  {
               result = 0 - result;
           }
       } 
