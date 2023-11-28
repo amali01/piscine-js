@@ -12,7 +12,7 @@ function indexOf(arr,value,index=0){
     return -1;
 }
 
-function lastIndexOf(arr,value,index=0){
+function lastIndexOf(arr,value,index=arr.length-1){
     if (arr.length===0 || value.length === 0){
         return  -1;
     }
