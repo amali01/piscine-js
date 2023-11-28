@@ -1,13 +1,21 @@
 function multiply (a, b){
     // Initialize an empty string to store the repeated int
-    let result ;
+    let result = 0;
+
     if (a === 0 || b === 0) {
-      res = 0;
-      }
-   result = multiply(a,b)
-      return result
+        res = 0;
+    }
+
+    // Repeat the int 'b' times
+    for (let i = 0; i < Math. abs(b); i++) {
+      result += a;
+    }
+    // If 'b' is negative, make the result negative
+  if (b < 0) {
+    result = 0 - result;
   }
-  
+    return result
+}
 
 
 function divide (a, b){
