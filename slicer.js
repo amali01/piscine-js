@@ -17,6 +17,7 @@ function slice(input, index1, index2 = input.length) {
       for (let i = index1; i < index2; i++) {
         res += input[i];
       }
+      return strToArr(res);
     }
   
     return res;
