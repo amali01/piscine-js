@@ -3,6 +3,9 @@ function slice(input, index1, index2 = input.length ) {
     if (index1 < 0){
         index1 = input.length + index1
     }
+    if (index2 < 0){
+        index2 = input.length + index2
+    }
     if (typeof input === 'string') {
       for (let i = index1; i < index2; i++) {
         res += input[i];
