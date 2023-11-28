@@ -1,9 +1,9 @@
-function indexOf(arr,value){
+function indexOf(arr,value,index=0){
     if (arr.length===0 || value.length === 0){
         return -1
     }
 
-    for (let i = 0 ; i < arr.length; i++) {
+    for (let i = index ; i < arr.length; i++) {
         if (arr[i] === value) {
           return i;
         }
@@ -12,13 +12,13 @@ function indexOf(arr,value){
     return -1;
 }
 
-function lastIndexOf(arr,value){
+function lastIndexOf(arr,value,index=0){
     let res = -1;
     if (arr.length===0 || value.length === 0){
         return res
     }
 
-    for (let i = 0 ; i < arr.length; i++) {
+    for (let i = index ; i < arr.length; i++) {
         if (arr[i] === value) {
           res = i;
         }
@@ -27,12 +27,12 @@ function lastIndexOf(arr,value){
     return res;
 }
 
-function includes(arr,value){
+function includes(arr,value,index=0){
     if (arr.length===0 || value.length === 0){
         return false
     }
 
-    for (let i = 0 ; i < arr.length; i++) {
+    for (let i = index ; i < arr.length; i++) {
         if (arr[i] === value) {
           return true;
         }
