@@ -66,9 +66,7 @@ function modulo (a, b){
           }
 
             // check if the result need to be negative
-            if (b < 0 && A < 0)  {
-                return a
-            } else if (A < 0)  {
+            if (A < 0)  {
                 a = 0 - a;
             }
         } 
