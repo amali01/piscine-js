@@ -22,7 +22,7 @@ function multiply (a, b){
 function divide (a, b){
   // Initialize an empty string to store the repeated int
   let result ;
-    if (a === 0) {
+    if (a === 0 || b > a) {
         result = 0;
     } else if (b === 1) {
         result = a;
