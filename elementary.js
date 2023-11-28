@@ -1,9 +1,13 @@
 function multiply (a, b){
     // Initialize an empty string to store the repeated int
     let result = 0;
-  
+  let count = b;
+  if (b < 0){
+    count *= -1;
+  };
+
     // Repeat the int 'b' times
-    for (let i = 0; i < b; i++) {
+    for (let i = 0; i < count; i++) {
       result += a;
     }
     return result
