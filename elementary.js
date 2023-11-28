@@ -3,7 +3,8 @@ function multiply (a, b){
     let result = 0;
 
     if (a === 0 || b === 0) {
-        res = 0;
+        result = 0;
+        return result
     }
 
     // Repeat the int 'b' times
@@ -22,24 +23,26 @@ function divide (a, b){
   // Initialize an empty string to store the repeated int
   let result ;
     if (a === 0) {
-        res = 0;
+        result = 0;
     } else if (b === 1) {
-        res = a;
+        result = a;
     } else if (b === -1) {
-        res = -a;
+        result = -a;
     } else if (b === 0) {
         return Infinity;
+    }else{
+       // Subtract 'b' from 'a' until 'a' becomes less than 'b'
+        while (a >= Math. abs(b)) {
+            a -= b;
+            result++;
+        }
+      // If 'b' is negative, make the result negative
+        if (b < 0) {
+            result = 0 - result;
+        }
     } 
 
-  // Subtract 'b' from 'a' until 'a' becomes less than 'b'
-  while (a >= Math. abs(b)) {
-    a -= b;
-    result++;
-  }
-    // If 'b' is negative, make the result negative
-    if (b < 0) {
-        result = 0 - result;
-      }
+
   return result
 }
 
