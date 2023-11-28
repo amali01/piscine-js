@@ -33,7 +33,7 @@ function divide (a, b){
     }else{
        // Subtract 'b' from 'a' until 'a' becomes less than 'b'
         while (a >= Math. abs(b)) {
-            a -= b;
+            a -= Math. abs(b);
             result++;
         }
       // If 'b' is negative, make the result negative
