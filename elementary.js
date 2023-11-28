@@ -52,9 +52,9 @@ function modulo (a, b){
     // Initialize an empty string to store the repeated int
     const A = a;
       if (a === 0 || b > Math. abs(a)) {
-          a = 0;
+          return a ;
       } else if (b === 1) {
-          a = a;
+          return a;
       } else if (b === -1) {
           a = -a;
       } else if (b === 0) {
