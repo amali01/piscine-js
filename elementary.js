@@ -64,13 +64,6 @@ function modulo (a, b){
           while (Math. abs(a) >= Math. abs(b)) {
              a  = Math. abs(a) - Math. abs(b);
           }
-          
-        // check if the result need to be negative
-        if (b < 0 && A < 0)  {
-            return a
-        } else if (b < 0 || A < 0)  {
-              a = 0 - a;
-          }
-      } 
+        } 
     return a
 }
