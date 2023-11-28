@@ -1,21 +1,23 @@
-function slice(input, index1, index2 = input.length ) {
+function slice(input, index1, index2 = input.length) {
     let res = '';
-    if (index1 < 0){
-        index1 = input.length + index1
+  
+    if (index1 < 0) {
+      index1 = input.length + index1;
     }
-    if (index2 < 0){
-        index2 = input.length + index2
+  
+    if (index2 < 0) {
+      index2 = input.length + index2;
     }
+  
     if (typeof input === 'string') {
       for (let i = index1; i < index2; i++) {
         res += input[i];
       }
     } else if (Array.isArray(input)) {
-       let str = input.toString().join('')
       for (let i = index1; i < index2; i++) {
-        res += str[i];
+        res += input[i];
       }
     }
-
-    return res ;
-}
+  
+    return res;
+  }
