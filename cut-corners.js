@@ -50,7 +50,9 @@ function floor(num) {
 // Function to round up to the nearest integer
 function ceil(num) {
   let neg = false;
-
+    if (num === 0){
+        return 0
+    }
     // Check if the input is negative
     if (num < 0) {
         neg = true;
