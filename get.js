@@ -1,3 +1,3 @@
 function get(src , path){
-    return Object.src.path
+    return src.path
 }
