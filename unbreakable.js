@@ -5,7 +5,7 @@ if (s.length <= 1) {
     return s
 }else{
     for (let i = 0 ; i <= s.length - div.length ; i ++ ){
-        if (s.substring(i,i+div.length)=== div){
+        if (s.substring(i,i+div.length)=== div && count <= i){
             res.push(s.substring(count,i));
             count = i+div.length;
         }else if (s.substring(i,i+div.length)=== div && i ===  s.length - div.length){
