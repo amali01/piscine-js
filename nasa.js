@@ -1,13 +1,15 @@
 function nasa(n){
-    let res = "";
+    let res = [];
     for (let i = 1; i <= n ; i++ ) {
         if (i%3 === 0 && i%5 === 0){
-            res += "NASA"
+            res.push("NASA")
         }else if (i%3 === 0 ){
-            res += "NA"
+            res.push("NA")
         }else if (i%3 === 0 ){
-            res += "SA"
+            res.push("SA")
+        }else{
+            res.push(i)
         }
     }
-    return res
+    return res.join(" ")
 }
