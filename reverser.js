@@ -6,9 +6,8 @@ function reverse(input){
   }else{
     arr = input ;
   }
-  for (let i = len(arr)-1; i >= 0; i--) {
+  for (let i = input.length-1; i >= 0; i--) {
     res.push(input[i]);
   }
   return res;
-    
 }
