@@ -5,7 +5,7 @@ function nasa(n){
             res.push("NASA")
         }else if (i%3 === 0 ){
             res.push("NA")
-        }else if (i%3 === 0 ){
+        }else if (i%5 === 0 ){
             res.push("SA")
         }else{
             res.push(i)
