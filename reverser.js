@@ -6,8 +6,12 @@ function reverse(input){
   }else{
     arr = input ;
   }
-  for (let i = input.length-1; i >= 0; i--) {
+  for (let i = arr.length-1; i >= 0; i--) {
     res.push(input[i]);
+  }
+
+ if (typeof input === 'string') {
+     return res.join("");
   }
   return res;
 }
