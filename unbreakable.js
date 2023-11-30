@@ -1,8 +1,8 @@
 function split(s , div){
     let res = [];
     let count = 0;
-if (s.length <= 1) {
-    return s
+if (s.length <= 1 || div.length > s.length ) {
+    return [s]
 }else{
     for (let i = 0 ; i <= s.length - div.length ; i ++ ){
         if (s.substring(i,i+div.length)=== div && count <= i){
