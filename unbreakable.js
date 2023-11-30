@@ -4,10 +4,10 @@ function split(s , div){
 if (s.length <= 1) {
     return s
 }else{
-    for (let i = 0 ; i < s.length ; i ++ ){
-        if (s[i] === div){
+    for (let i = 0 ; i < s.length - div.length ; i ++ ){
+        if (s.substring(i,i+div.length)=== div){
             res.push(s.substring(count,i));
-            count = i+1;
+            count = i+div.length;
         }
     }
     res.push(s.substring(count));
