@@ -1,9 +1,13 @@
 function pyramid(str, num) {
     let res = "";
+    let s = "";
+     for (let a = 0; a < str.length ; a++) {
+        s += " ";
+      }
     for (let i = 0; i < num; i++) {
       // Add spaces for alignment
-      for (let k = 0; k < num - i - 1; k++) {
-        res += " ";
+      for (let k = 0; k+str.length <= num - i ; k++) {
+        res += s;
       }
       // Add str for the pyramid
       for (let j = 0; j < 2 * i + 1; j++) {
@@ -16,3 +20,4 @@ function pyramid(str, num) {
     }
     return res;
   }
+  
