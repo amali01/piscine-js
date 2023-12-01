@@ -1,23 +1,8 @@
-function pyramid(str, num) {
-    let res = "";
-    let s = "";
-     for (let a = 0; a < str.length ; a++) {
-        s += " ";
-      }
-    for (let i = 0; i < num; i++) {
-      // Add spaces for alignment
-      for (let k = 0; k+str.length <= num - i ; k++) {
-        res += s;
-      }
-      // Add str for the pyramid
-      for (let j = 0; j < 2 * i + 1; j++) {
-        res += str;
-      }
-      // Move to the next line if not the last level
-      if (i !== num - 1) {
-        res += "\n";
-      }
+function pyramid(s, n) {
+    let str = "";
+    let spaces = " ".repeat(s.length);
+    for (var i = 0; i < n; i++) {
+        str = str + spaces.repeat(n - i) + s.repeat(2 * i - 1) + "\n";
     }
-    return res;
-  }
-  
+    return str.slice(0, -1);
+}
