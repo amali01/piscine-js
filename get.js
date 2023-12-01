@@ -13,7 +13,7 @@ function get(src, path) {
         current = current[key];
       } else {
         // If the key doesn't exist, return undefined
-        return undefined;
+        return  current[key];
       }
     }
   
